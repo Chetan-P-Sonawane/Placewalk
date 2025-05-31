@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto";
+}
+
+.top{
+    height:55%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    align-items: start;
+    justify-content:space-between;
+    padding: 20px 15px;
+    text-transform: uppercase;
+
+    h5{
+        font-size: 7px;
+        font-weight: 400;
+    }
+}
+
+.titlediv{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding: 0 15px;
+
+
+
+    .box{
+        height: 42px;
+        width: 42px;
+        background-color: black;
+        position: relative;
+
+        i{
+            position: absolute;
+            right: -17%;
+            bottom: 20%;
+            color:rgb(221, 254, 36);
+        }
+    }
+
+    h1{
+        font-size:65px;
+        font-weight: 400;
+        letter-spacing: -2px;
+        line-height:none;
+    }
+
+}
+
+.line{
+    height:4px;
+    width:100%;
+    background-color: black;
+    margin-bottom: 4px;
+    position: absolute;
+    top:-5%;
+}
+
+.bottom{
+    position: relative;
+    height:45%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1667751803583-1e2fb6c881ec?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+
+    .circle{
+        position: absolute;
+        right: 10%;
+        top:-20%;
+        height: 10vw;
+        width: 10vw;
+        background-color: rgb(221, 254, 36);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        span{
+            font-size:6vw;
+            transform: translate(0%,-10%);
+        }
+    }
+    
+    
+    .cover{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        padding: 5px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .spreadtext{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color:rgb(221, 254, 36);
+
+        span{
+            margin-right: 15px;
+            background-color: rgb(221, 254, 36);
+        }
+
+        h5{
+            font-weight: 400;
+        }
+    }
+
+    .infodiv{
+
+        span{
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 2px 8px; 
+            color: white;
+            font-size: 8px;
+        }
+
+        .infoparas{
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            margin-top:8px;
+
+            .yellowpara{
+                color: rgb(221, 254, 36);
+                font-size: 8px;
+                width: 35%;
+            }
+            .whitepara{
+                color: white;
+                font-size: 8px;
+                width: 35%;
+            }
+        }
+    }
+}

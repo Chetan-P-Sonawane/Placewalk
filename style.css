@@ -13,6 +13,9 @@ main{
     height: 100%;
     width: 100%;
     font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top{
@@ -31,7 +34,7 @@ nav{
     text-transform: uppercase;
 
     h5{
-        font-size: 7px;
+        font-size: 0.92vw;
         font-weight: 400;
     }
 }
@@ -59,7 +62,7 @@ nav{
     }
 
     h1{
-        font-size:65px;
+        font-size: 8.5vw;
         font-weight: 400;
         letter-spacing: -2px;
         line-height:none;
@@ -134,27 +137,105 @@ nav{
         span{
             border: 1px solid white;
             border-radius: 10px;
-            padding: 2px 8px; 
+            padding: 0.4vw 0.8vw; 
             color: white;
-            font-size: 8px;
+            font-size: 1vw;
         }
 
         .infoparas{
             display: flex;
             justify-content: space-between;
             text-transform: uppercase;
-            margin-top:8px;
+            margin-top:1vw;
 
             .yellowpara{
                 color: rgb(221, 254, 36);
-                font-size: 8px;
+                font-size: 1vw;
                 width: 35%;
             }
             .whitepara{
                 color: white;
-                font-size: 8px;
+                font-size: 1vw;
                 width: 35%;
             }
         }
+    }
+}
+
+
+
+@media (max-width:500px) {
+
+    .top{
+      height:40%;
+    }
+
+    nav{
+        h5{
+            font-size: 3vw;
+        }
+    }
+
+    .titlediv{
+    
+        .box{
+            height: 42px;
+            width: 42px;
+    
+            i{
+                right: -10%;
+                bottom: 20%;
+            }
+        }
+    
+        h1{
+            font-size: 10vw;
+        }
+
+    }
+    
+
+   .bottom{
+    height:50%;
+
+    .circle{
+        right: 10%;
+        top:-14%;
+        height: 22vw;
+        width: 22vw;
+        
+        span{
+            font-size:9vw;
+        }
+    }
+
+    .spreadtext{
+        h5{
+            font-size: 4.6vw;
+        }
+    }
+
+    .infodiv{
+
+        span{
+            font-size: 2.7vw;
+            padding: 0.8vw 1.6vw; 
+
+        }
+
+        .infoparas{
+            margin-top:12px;
+
+            .yellowpara{
+                font-size: 2.7vw;
+                width: 45%;
+            }
+            .whitepara{
+                font-size: 2.7vw;
+                width: 45%;
+            }
+        }
+    }
+
     }
 }
